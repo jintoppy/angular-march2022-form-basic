@@ -1,4 +1,54 @@
-<form>
-  <input type="text">
+<h2>{{title}}</h2>
 
+<h2>{{title | smallName}}</h2>
+
+
+<h2>{{title | uppercase }}</h2>
+
+<h2>{{title | lowercase }}</h2>
+
+<h3>{{amount}}</h3>
+
+<h3>{{amount | currency:'INR'}}</h3>
+
+<h4>{{person}}</h4>
+
+<h4>{{person | json}}</h4>
+
+<h4>{{time}}</h4>
+
+<h4>{{time | date:'dd-MM-YYYY'}}</h4>
+
+
+<!-- <form (ngSubmit)="onFormSubmit(loginForm)" #loginForm="ngForm">
+  <div>
+    username: 
+    <input 
+      type="text"     
+      required 
+      minlength="2"
+      pattern="\d*"
+      name="username" 
+      ngModel 
+      #myInput="ngModel"
+    >
+  </div>
+  <div class="error" *ngIf="myInput.errors">
+    {{myInput.errors | json}}
+    <div *ngIf="myInput.errors['minlength']">
+        Expected: {{myInput.errors['minlength'].requiredLength}}
+        But entered only {{myInput.errors['minlength'].actualLength}}
+    </div>
+    <div *ngIf="myInput.errors['required']">
+        This field is required
+    </div>
+  </div>
+  <div>
+    password: <input type="password" name="password" required ngModel #myPwd="ngModel">
+  </div>
+  <div class="error" *ngIf="myPwd.errors && myPwd.errors['required']">
+    Required
+  </div>
+  <button [disabled]="loginForm.invalid">Submit</button>
 </form>
+{{myInput}} -->
